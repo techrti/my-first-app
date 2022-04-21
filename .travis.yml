@@ -1,4 +1,4 @@
-language: generic
+language: minimal
 
 services:
    - docker
@@ -6,8 +6,8 @@ services:
 deploy:
    provider: elasticbeanstalk
    region: us-east-1
-   app: "my-first-app"
-   env: "Myfirstapp-env"
+   app: "Docker-Test"
+   env: "Dockertest-env"
 
    access_key_id: $AWS_ACCESS_KEY
    secret_access_key: $AWS_SECRET_KEY
